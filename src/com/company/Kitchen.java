@@ -10,9 +10,9 @@ public class Kitchen extends Employee {
 
     @Override
     public String toString() {
-        return "Kitchen{" +
-                "serviceCharge=" + serviceCharge +
-                '}';
+        return super.toString()
+                + ", serviceCharge='" + getServiceCharge() + "'"
+                + ", salary='" + calculatorSalary() + "'";
     }
 
     public long getServiceCharge() {
