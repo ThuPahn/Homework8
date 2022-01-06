@@ -10,9 +10,9 @@ public class Waiter extends Employee {
 
     @Override
     public String toString() {
-        return "Waiter{" +
-                "compensate=" + compensate +
-                '}';
+        return super.toString() +
+                ", compensate='" + getCompensate() + "'"
+                + ", salary='" + calculatorSalary() + "'";
     }
 
     public long getCompensate() {
