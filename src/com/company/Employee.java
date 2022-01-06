@@ -19,7 +19,7 @@ public abstract class Employee {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", basicSalary=" + basicSalary +
+                ", basicSalary=" + getBasicSalary() +
                 '}';
     }
 
